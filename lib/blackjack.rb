@@ -25,9 +25,10 @@ def end_game(display_card_total)
 end
 
 def initial_round(deal_card)
-  $sum = 0
-  $sum += deal_card *2
-  display_card_total
+  cards = 0
+  cards += deal_card
+  cards += deal_card
+  display_card_total(cards)
 end
 
 def hit?
